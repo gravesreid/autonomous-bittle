@@ -9,8 +9,8 @@ This repository holds the code and configuration for the autonomous swarm roboti
    b. set pi as username, select password
    c. Log in
 3. Set up wifi:
-   a. sudo raspi-config
-   b. 5. Localisation Options
+   - sudo raspi-config
+   - Localisation Options
    c. Set Timezone and WLAN Country
    d. go to Advanced Options, set network config to use NetworkManager
    e. go to system settings, enter wifi ssid and password
