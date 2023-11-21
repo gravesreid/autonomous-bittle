@@ -24,7 +24,7 @@ This repository holds the code and configuration for the autonomous swarm roboti
    - Ensure one wire communication disabled
    - Enable remote GPIO pins
 7. Reboot
-8. sudo apt-get update && sudo apt-get upgrade
+8. sudo apt-get update 
 9. sudo apt-get install git
 10. git clone https://github.com/PetoiCamp/OpenCat.git
 11. sudo apt-get install python3-opencv -y
