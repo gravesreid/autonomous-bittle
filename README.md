@@ -38,3 +38,8 @@ This repository holds the code and configuration for the autonomous swarm roboti
 14. Install pyserial: pip install pyserial
 15. sudo apt-get install python3-tk
 
+# Connect to raspberry pi through ssh
+
+# Send commands to bittle through ardserial.py via ssh
+
+# Start video streaming from raspberry pi to desktop
