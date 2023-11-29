@@ -45,5 +45,12 @@ This repository holds the code and configuration for the autonomous swarm roboti
 4. You will be prompted for the password for the pi. You can now disconnect the monitor from the pi
 
 # Send commands to bittle through ardserial.py via ssh
+1. Navigate to the folder: OpenCat/serialMaster
+2. type: python3 ardserial.py
+3. Now you can enter commands through the terminal
 
 # Start video streaming from raspberry pi to desktop
+1. run ifconfig on your desktop terminal
+2. enter the desktop ip address in both the sender.py and receiver.py scripts
+3. On the desktop, run receiver.py
+4. on the pi, run sender.py
