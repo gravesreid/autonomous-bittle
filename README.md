@@ -41,7 +41,7 @@ This repository holds the code and configuration for the autonomous swarm roboti
 # Connect to raspberry pi through ssh
 1. Hook the pi up to a monitor and type: ifconfig
 2. note the ip address for the pi
-3. On your desktop terminal type: ssh pi@"the ip address for the pi"
+3. On your desktop terminal type: ssh pi@the ip address for the pi
 4. You will be prompted for the password for the pi. You can now disconnect the monitor from the pi
 
 # Send commands to bittle through ardserial.py via ssh
