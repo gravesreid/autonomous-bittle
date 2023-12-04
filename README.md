@@ -28,15 +28,17 @@ This repository holds the code and configuration for the autonomous swarm roboti
 9. sudo apt-get install git
 10. git clone https://github.com/PetoiCamp/OpenCat.git
 11. sudo apt-get install python3-opencv -y
-12. Set up virtual environment for python:
+12. sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
+13. sudo apt-get install gstreamer1.0-tools
+14. Set up virtual environment for python:
     - sudo apt-get install python3-virtualenv
     - mkdir project
     - cd project
     - python3 -m virtualenv env
     - source env/bin/activate
-13. sudo apt-get install pip
-14. Install pyserial: pip install pyserial
-15. sudo apt-get install python3-tk
+15. sudo apt-get install pip
+16. Install pyserial: pip install pyserial
+17. sudo apt-get install python3-tk
 
 # Connect to raspberry pi through ssh
 1. Hook the pi up to a monitor and type: ifconfig
@@ -54,3 +56,11 @@ This repository holds the code and configuration for the autonomous swarm roboti
 2. enter the desktop ip address in both the sender.py and receiver.py scripts
 3. On the desktop, run receiver.py
 4. on the pi, run sender.py
+
+# Send files from one machine to another (1st part is file being copied)
+1. scp /path/to/local/file username@remotehost:/path/to/remote/directory
+
+# Send entire directory from one machine to another
+1. scp -r /path/to/local/directory username@remotehost:/path/to/remote/directory
+
+
