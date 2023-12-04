@@ -28,8 +28,8 @@ This repository holds the code and configuration for the autonomous swarm roboti
 9. sudo apt-get install git
 10. git clone https://github.com/PetoiCamp/OpenCat.git
 11. sudo apt-get install python3-opencv -y
-12. sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
-13. sudo apt-get install gstreamer1.0-tools
+12. (optional) sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
+13. (optional) sudo apt-get install gstreamer1.0-tools
 14. Set up virtual environment for python:
     - sudo apt-get install python3-virtualenv
     - mkdir project
