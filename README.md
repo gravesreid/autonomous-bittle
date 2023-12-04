@@ -63,4 +63,10 @@ This repository holds the code and configuration for the autonomous swarm roboti
 # Send entire directory from one machine to another
 1. scp -r /path/to/local/directory username@remotehost:/path/to/remote/directory
 
+# Operate bittle to receive commands based on object recognition
+1. Set up two terminals with ssh to pi
+2. Open one terminal in bittle python environment on desktop
+3. On first bittle terminal run python3 ardSocket.py
+4. On desktop terminal run python3 receiver.py (or whichever receiver file)
+5. On second bittle terminal run python3 sender.py
 
