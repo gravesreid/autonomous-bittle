@@ -46,6 +46,9 @@ This repository holds the code and configuration for the autonomous swarm roboti
 3. On your desktop terminal type: ssh pi@the ip address for the pi
 4. You will be prompted for the password for the pi. You can now disconnect the monitor from the pi
 
+# If you get error: WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+1. ssh-keygen -f "/home/reid/.ssh/known_hosts" -R "ip.address"
+
 # Send commands to bittle through ardserial.py via ssh
 1. Navigate to the folder: OpenCat/serialMaster
 2. type: python3 ardserial.py
