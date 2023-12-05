@@ -28,17 +28,16 @@ This repository holds the code and configuration for the autonomous swarm roboti
 9. sudo apt-get install git
 10. git clone https://github.com/PetoiCamp/OpenCat.git
 11. sudo apt-get install python3-opencv -y
-12. (optional) sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav
-13. (optional) sudo apt-get install gstreamer1.0-tools
-14. Set up virtual environment for python:
-    - sudo apt-get install python3-virtualenv
-    - mkdir project
-    - cd project
-    - python3 -m virtualenv env
-    - source env/bin/activate
-15. sudo apt-get install pip
-16. Install pyserial: pip install pyserial
-17. sudo apt-get install python3-tk
+12. sudo apt-get install pip
+13. Install pyserial: pip install pyserial
+14. sudo apt-get install python3-tk
+
+# Set up virtual environment for python:
+1. sudo apt-get install python3-virtualenv
+2. mkdir project
+3. cd project
+4. python3 -m virtualenv env
+5. source env/bin/activate
 
 # Connect to raspberry pi through ssh
 1. Hook the pi up to a monitor and type: ifconfig
