@@ -30,7 +30,7 @@ This repository holds the code and configuration for the autonomous swarm roboti
 11. sudo apt-get install python3-opencv -y
 12. sudo apt-get install pip
 13. pip install pyserial
-14. pip install python3-tk
+14. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
 
 # Set up virtual environment for python:
 1. sudo apt-get install python3-virtualenv
