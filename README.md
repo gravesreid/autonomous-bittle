@@ -27,10 +27,11 @@ This repository holds the code and configuration for the autonomous swarm roboti
 8. sudo apt-get update 
 9. sudo apt-get install git
 10. git clone https://github.com/PetoiCamp/OpenCat.git
-11. sudo apt-get install python3-opencv -y
-12. sudo apt-get install pip
-13. pip install pyserial
-14. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
+11. git clone https://github.com/gravesreid/autonomous-bittle.git
+12. sudo apt-get install python3-opencv -y
+13. sudo apt-get install pip
+14. pip install pyserial
+15. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
 
 # Set up virtual environment for python:
 1. sudo apt-get install python3-virtualenv
