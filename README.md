@@ -36,6 +36,15 @@ This repository holds the code and configuration for the autonomous swarm roboti
 17. at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
 18. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
 
+# If you have issues with accessing port ttyS0 (this disables bluetooth):
+1. sudo vim /boot/config.txt
+2. add: dtoverlay=disable-bt
+3. Enter to terminal:
+   sudo systemctl stop hciuart
+   sudo systemctl disable hciuart
+4. sudo reboot
+
+
 # Set up virtual environment for python:
 1. sudo apt-get install python3-virtualenv
 2. mkdir project
