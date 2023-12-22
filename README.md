@@ -31,7 +31,10 @@ This repository holds the code and configuration for the autonomous swarm roboti
 12. sudo apt-get install python3-opencv -y
 13. sudo apt-get install pip
 14. pip install pyserial
-15. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
+15. sudo apt-get install vim -y
+16. vim ~/.bashrc
+17. at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
+18. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
 
 # Set up virtual environment for python:
 1. sudo apt-get install python3-virtualenv
