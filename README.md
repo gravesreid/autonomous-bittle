@@ -40,9 +40,9 @@ This repository holds the code and configuration for the autonomous swarm roboti
 1. sudo vim /boot/config.txt
 2. add: dtoverlay=disable-bt
 3. Enter to terminal:
-   sudo systemctl stop hciuart
-   sudo systemctl disable hciuart
-4. sudo reboot
+4. sudo systemctl stop hciuart
+5. sudo systemctl disable hciuart
+6. sudo reboot
 
 
 # Set up virtual environment for python:
