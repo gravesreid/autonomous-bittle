@@ -6,7 +6,7 @@ cd ~/ros2_ws/src
 ```
 ### create the package
 ```bash
-ros2 pkg create --build-type ament_python --license Apache-2.0 bittle_ros2
+ros2 pkg create --build-type ament_python --license Apache-2.0 bittle_ROS2
 ```
 ### copy the bittle driver script
 ```bash
