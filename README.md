@@ -77,31 +77,47 @@ sudo reboot
 
 
 # Set up virtual environment for python:
-1. sudo apt-get install python3-virtualenv
-2. mkdir project
-3. cd project
-4. python3 -m virtualenv env
-5. source env/bin/activate
+```bash
+sudo apt-get install python3-virtualenv
+```
+```bash
+mkdir project
+```
+```bash
+cd project
+```
+```bash
+python3 -m virtualenv env
+```
+```bash
+source env/bin/activate
+```
 
 # Connect to raspberry pi through ssh
-1. Hook the pi up to a monitor and type: ifconfig
+1. Hook the pi up to a monitor and type:
+ ```bash ifconfig ```
 2. note the ip address for the pi
-3. On your desktop terminal type: ssh pi@the ip address for the pi
+3. On your desktop terminal type:
+```bash ssh pi@[pi_ip_address]```
 4. You will be prompted for the password for the pi. You can now disconnect the monitor from the pi
 
 # If you get error: WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
-1. ssh-keygen -f "/home/reid/.ssh/known_hosts" -R "ip.address"
+```bash ssh-keygen -f "/home/[your_username]/.ssh/known_hosts" -R [ip.address]```
 
 # Send commands to bittle through ardserial.py via ssh
-1. Navigate to the folder: OpenCat/serialMaster
-2. type: python3 ardserial.py
-3. Now you can enter commands through the terminal
+```bash
+cd ~/Opencat/serialMaster
+```
+```bash
+python3 ardserial.py
+```
+Now you can enter commands through the terminal
 
 # Start video streaming from raspberry pi to desktop
-1. run ifconfig on your desktop terminal
+1. run ifconfig on your desktop terminal ```bash ifconfig ```
 2. enter the desktop ip address in both the sender.py and receiver.py scripts
-3. On the desktop, run receiver.py
-4. on the pi, run sender.py
+3. On the desktop, run ```bash python3 receiver.py```
+4. on the pi, run ```bash python3 sender.py```
 
 # Send files from one machine to another (1st part is file being copied)
 1. scp /path/to/local/file username@remotehost:/path/to/remote/directory
@@ -112,7 +128,7 @@ sudo reboot
 # Operate bittle to receive commands based on object recognition
 1. Set up two terminals with ssh to pi
 2. Open one terminal in bittle python environment on desktop
-3. On first bittle terminal run python3 ardSocket.py
-4. On desktop terminal run python3 receiver.py (or whichever receiver file)
-5. On second bittle terminal run python3 sender.py
+3. On first bittle terminal run ```bash python3 ardSocket.py```
+4. On desktop terminal run ```bash python3 receiver.py``` (or whichever receiver file)
+5. On second bittle terminal run ```bash python3 sender.py```
 
