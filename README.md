@@ -132,10 +132,14 @@ python3 sender.py
 ```
 
 # Send files from one machine to another (1st part is file being copied)
-1. scp /path/to/local/file username@remotehost:/path/to/remote/directory
+```bash
+scp /path/to/local/file username@remotehost:/path/to/remote/directory
+```
 
 # Send entire directory from one machine to another
-1. scp -r /path/to/local/directory username@remotehost:/path/to/remote/directory
+```bash
+scp -r /path/to/local/directory username@remotehost:/path/to/remote/directory
+```
 
 # Operate bittle to receive commands based on object recognition
 1. Set up two terminals with ssh to pi
