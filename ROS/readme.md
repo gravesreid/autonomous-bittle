@@ -1,3 +1,6 @@
+# I set up a ROS2 wrapper for Bittle. The instructions and code are here:
+https://github.com/gravesreid/bittle_ros2
+
 # this is the step by step guide to use ROS noetic with Bittle
 ## On the Pi, install docker: 
 ```bash
