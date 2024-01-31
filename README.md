@@ -9,7 +9,9 @@ This repository holds the code and configuration for the autonomous swarm roboti
    - set pi as username, select password
    - Log in
 3. Set up wifi:
-   - sudo raspi-config
+   ```bash
+   sudo raspi-config
+   ```
    - Localisation Options
    - Set Timezone and WLAN Country
    - go to Advanced Options, set network config to use NetworkManager
@@ -24,17 +26,20 @@ This repository holds the code and configuration for the autonomous swarm roboti
    - Ensure one wire communication disabled
    - Enable remote GPIO pins
 7. Reboot
-8. sudo apt-get update 
-9. sudo apt-get install git
-10. git clone https://github.com/PetoiCamp/OpenCat.git
-11. git clone https://github.com/gravesreid/autonomous-bittle.git
-12. sudo apt-get install python3-opencv -y
-13. sudo apt-get install pip
-14. pip install pyserial
-15. sudo apt-get install vim -y
-16. vim ~/.bashrc
-17. at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
-18. pip install python3-tk if pip doesn't work do: sudo apt-get install python3-tk
+8.
+```bash sudo apt-get update 
+    bash sudo apt-get install git
+    git clone https://github.com/PetoiCamp/OpenCat.git
+git clone https://github.com/gravesreid/autonomous-bittle.git
+ sudo apt-get install python3-opencv -y
+sudo apt-get install pip
+sudo apt-get install python3-tk
+pip install pyserial
+sudo apt-get install vim -y
+vim ~/.bashrc
+```
+9. at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
+pip install python3-tk if pip doesn't work do: 
 
 # If you have issues with accessing port ttyS0 (this disables bluetooth):
 1. sudo vim /boot/config.txt
