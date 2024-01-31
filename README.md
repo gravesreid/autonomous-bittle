@@ -26,28 +26,54 @@ This repository holds the code and configuration for the autonomous swarm roboti
    - Ensure one wire communication disabled
    - Enable remote GPIO pins
 7. Reboot
-8.
-```bash sudo apt-get update 
-    bash sudo apt-get install git
-    git clone https://github.com/PetoiCamp/OpenCat.git
+8. Install necessary packages:
+```bash
+sudo apt-get update
+```
+```bash
+bash sudo apt-get install git
+```
+```bash
+git clone https://github.com/PetoiCamp/OpenCat.git
+```
+```bash
 git clone https://github.com/gravesreid/autonomous-bittle.git
- sudo apt-get install python3-opencv -y
+```
+```bash
+sudo apt-get install python3-opencv -y
+```
+```bash
 sudo apt-get install pip
+```
+```bash
 sudo apt-get install python3-tk
+```
+```bash
 pip install pyserial
+```
+9. Edit bash path:
+```bash
 sudo apt-get install vim -y
 vim ~/.bashrc
 ```
-9. at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
-pip install python3-tk if pip doesn't work do: 
+at the end of the file add:  export PATH=$PATH:/home/pi/.local/bin
+
 
 # If you have issues with accessing port ttyS0 (this disables bluetooth):
-1. sudo vim /boot/config.txt
-2. add: dtoverlay=disable-bt
-3. Enter to terminal:
-4. sudo systemctl stop hciuart
-5. sudo systemctl disable hciuart
-6. sudo reboot
+```bash
+ sudo vim /boot/config.txt
+```
+1. add: dtoverlay=disable-bt
+2. Enter to terminal:
+```bash
+sudo systemctl stop hciuart
+```
+```bash
+sudo systemctl disable hciuart
+```
+```bash
+sudo reboot
+```
 
 
 # Set up virtual environment for python:
