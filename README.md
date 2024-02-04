@@ -21,12 +21,27 @@ This repository holds the code and configuration for the autonomous swarm roboti
 6. Set up interface options
    - 3 Interface Options
    - Enable Legacy Camera support
-   - Enable SSH
+   - Enable SSHago
    - I6 Serial port: Disable Login Shell, Enable Serial port hardware
    - Ensure one wire communication disabled
    - Enable remote GPIO pins
 7. Reboot
-8. Install necessary packages:
+8. Fix locale issues:
+9.
+```bash
+   sudo nano /etc/locale.gen
+```
+In file, uncomment line #en_US.UTF-8
+```bash
+sudo locale-gen
+```
+Set locale:
+```bash
+sudo update-locale LANG=en_US.UTF-8
+```
+Reboot
+
+10. Install necessary packages:
 ```bash
 sudo apt-get update
 ```
@@ -51,7 +66,7 @@ sudo apt-get install python3-tk
 ```bash
 pip install pyserial
 ```
-9. Edit bash path:
+11. Edit bash path:
 ```bash
 sudo apt-get install vim -y
 vim ~/.bashrc
