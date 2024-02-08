@@ -64,7 +64,7 @@ sudo apt-get install pip
 sudo apt-get install python3-tk
 ```
 ```bash
-pip install pyserial
+sudo apt install python3-serial
 ```
 11. Edit bash path:
 ```bash
