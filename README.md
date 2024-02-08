@@ -46,7 +46,7 @@ Reboot
 sudo apt-get update
 ```
 ```bash
-bash sudo apt-get install git
+sudo apt-get install git
 ```
 ```bash
 git clone https://github.com/PetoiCamp/OpenCat.git
