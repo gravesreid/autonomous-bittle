@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "simple_serial"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
