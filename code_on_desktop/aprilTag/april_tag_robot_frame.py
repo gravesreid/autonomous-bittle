@@ -9,12 +9,12 @@ robot_id = 3
 block_id = 4
 
 global position_data
-position_data = {"Xb": [''],
-                 "Yb": [''],
-                 "rotb": [''],
-                 "Xr": [''],
-                 "Yr": [''],
-                 "rotr": ['']}
+position_data = {"Xb": [0.0],
+                 "Yb": [0.0],
+                 "rotb": [0.0],
+                 "Xr": [0.0],
+                 "Yr": [0.0],
+                 "rotr": [0.0]}
 
 # Function to calculate relative position and orientation
 def calculate_relative(frame):

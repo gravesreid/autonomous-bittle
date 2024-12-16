@@ -2,7 +2,7 @@ import cv2
 import os
 
 # Define the directory where you want to save the photos
-save_directory = "/home/reid/projects/bittle/camera_calibration/11DEC2024"
+save_directory = "/home/reid/projects/bittle/block_photos/16DEC2024"
 if not os.path.exists(save_directory):
     os.makedirs(save_directory)
 
