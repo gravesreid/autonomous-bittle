@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['block']
+
+roboflow:
+  workspace: bittle
+  project: -hackster_bittle
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/bittle/-hackster_bittle/dataset/1
